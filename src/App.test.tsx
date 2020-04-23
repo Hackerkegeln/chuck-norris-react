@@ -2,8 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders the image', () => {
+  const { getByRole } = render(<App />);
+  const banner = getByRole('img');
+  expect(banner).toHaveAttribute('src', 'logo.jpg');
+  expect(banner).toHaveAttribute('alt', 'logo');
+});
+
+test('renders the page by snapshot', () => {
+  const {container} = render(<App />);
+  expect(container).toMatchSnapshot();
 });

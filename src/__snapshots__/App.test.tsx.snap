@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the page by snapshot 1`] = `
+<div>
+  <div
+    class="App, container-fluid"
+  >
+    <header
+      class="App-header"
+    >
+      <img
+        alt="logo"
+        class="App-logo"
+        src="logo.jpg"
+      />
+    </header>
+    <main>
+      <div
+        class="spinner-border"
+        role="status"
+      >
+        <span
+          class="sr-only"
+        >
+          Loading...
+        </span>
+      </div>
+    </main>
+    <footer>
+      <button
+        class="btn btn-primary"
+      >
+        Refresh
+      </button>
+    </footer>
+  </div>
+</div>
+`;
